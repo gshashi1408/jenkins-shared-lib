@@ -1,7 +1,7 @@
 @Library('library-demo') _
 
-import com.samplebuilder.GlobalVars
-import com.samplebuilder.SampleClass
+import com.simplebuilder.GlobalVars
+import com.simplebuilder.SampleClass
 
 pipeline {
     agent any
@@ -9,7 +9,7 @@ pipeline {
         stage('Demo') {
             steps {
                 echo 'Hello, world'
-                sayHello 'Dave'
+                sayHello 'Devops'
 
                 echo 'The value of foo is : ' + GlobalVars.foo
 
