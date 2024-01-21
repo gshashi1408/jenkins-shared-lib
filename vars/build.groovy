@@ -1,7 +1,7 @@
 
 def call(String name = 'value'){
-    echo "Building, ${name} project"
+    echo "Building java project"
     sh '''
-      mvn clean package
+      mvn clean ${name}
     '''
 }
